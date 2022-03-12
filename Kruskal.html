@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kruskal算法演示</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js_of_Kruskal.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="css_of_Kruskal.css" type="text/css" />
+<div>
+    <h2 style="position:fixed;left: 620px;"><strong>Kruskal算法演示</strong></h2>
+</div>
+<div class="left" id=left>
+  <section>
+    Kruskal算法<br>
+    由小到大依次遍历图中的所有边添加到最小生成树中<br>
+    但是遇到成环的边（即无用边则跳过）
+    直到生成
+    <strong>顶点数-1</strong>个边或者<strong>不可到达</strong>为止
+    <hr>
+  </section>
+  <section id='process' style="text-align: center;"> 
+  </section>
+</div>
+<div class="slide" id="slider">
+    <input type="button" name="" value="消除所有的点和线" class="refer" onclick="cleanele()">
+    <input type="button" name="" value="只消除所有的连线" class="refer" onclick="cleanline()">
+    <div style="border: none;" class="refer">顶点个数
+      <input type="input" name="" id="input_num" value="6" class="int">
+    </div>
+    <input type="button" name="" value="生成节点" class="refer" onclick="input()">
+    <input type="button" name="" value="生成新的图" class="refer" onclick="randomCreate(1)">
+    <input type="button" name="" value="Kruskal最小生成树" class="refer1" onclick="createTree()">
+    <input type="button"  value="提高速度" class="referx1" onclick="speedup()">
+    <input type="button"  value="降低速度" class="referx2" onclick="speeddown()">
+    <input type="button"  value="恢复初始速度" class="referx" onclick="speedback()">
+    <div style="margin-top: 10px;margin-left: 10px;">当前速度:<span id='speed'>1000</span> 毫秒</div>
+</div>
+<div class="changdiv" id="changdiv" tabindex="1">
+  删除或更改链路权值<br>
+  权值为999会视为断路<br>
+  <input type="input" name="" id="cnum">
+  <br>
+  <div class="tochange1" type="button" id="onchange" onclick="ok()">更改</div> 
+  <br>
+  <div class="tochange2" type="button" style="background: rgb(0, 0, 0)" id="delete" onclick="deleteline()">删除
+  </div>
+</div>
+<div id="Wrap"></div>
+<div id="divele"></div>
+
+
+<script>
+  
+  document.getElementById('changdiv').onblur = function(){
+            document.getElementById('changdiv').style.display='none';
+        };
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

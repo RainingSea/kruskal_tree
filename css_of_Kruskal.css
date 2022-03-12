@@ -1,0 +1,255 @@
+body, html, div, svg {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap {
+  position: fixed;
+  height: 0%;
+  width: 80%;
+  user-select: none;
+}
+
+.itemwrap {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  left: 200px;
+  top: 100px;
+}
+
+.item {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  border: 1px solid #333;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.lineWrap {
+  position: fixed;
+  left: 0;
+  overflow: visible;
+}
+
+div.test {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 20%;
+  border: 3px solid #000000;
+  position: fixed;
+  z-index: 9999999;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  /*float: left;*/
+}
+
+#lineWrap {
+  position: fixed;
+  overflow: visible;
+}
+
+.left{
+  position: fixed;
+  top: 20px;
+  left:5px;
+  height: 90%;
+  padding-left: 5px;
+  width: 15%;
+  border: 3px solid #f54949;
+  border-radius: 4px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrongp{
+  color: red;
+}
+
+.slide {
+  position: fixed;
+  top: 20px;
+  right: 5px;
+  height: 90%;
+  padding-left: 5px;
+  width: 15%;
+  /* border: 3px solid #f54949; */
+  border-radius: 4px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #125;
+  background-color: #eeb;
+  border-radius: 5px;
+}
+
+.slide_content {
+  font-size: 15px;
+  color: #678945;
+}
+
+.slider_line {
+  position: unset;
+}
+
+.int {
+  height: 26px;
+  width: 60px;
+  /* margin-left: 50px; */
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+}
+
+.control {
+  position: fixed;
+  margin-top: 10px;
+  left: 0px;
+  top: 0px;
+  width: 80%;
+  z-index: 999999999;
+  text-align: center;
+}
+
+.refer {
+  height: 30px;
+  background: #eef9ff;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+  margin-top:40px ;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.refer1 {
+  height: 40px;
+  background: #ffc1d3;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.referx1 {
+  height: 40px;
+  /* background: #ffc1d3; */
+  width: 90px;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.referx2 {
+  height: 40px;
+  /* background: #ffc1d3; */
+  width: 90px;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+  margin-top: -40px;
+  margin-left: 130px;
+  /* margin-right: 10px; */
+}
+
+.referx {
+  height: 40px;
+  /* background: #ffc1d3; */
+  width: 90%;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+  margin-top: 20px;
+  margin-left: 10px;
+  /* margin-right: 10px; */
+}
+
+
+.int_num {
+  font-size: 22px;
+  color: #232323;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #eee;
+  text-align: center;
+}
+
+.thetext{
+  font-size: 22px;
+  width: 30px;
+  height: 30px;
+}
+
+.changdiv {
+  width: 200px;
+  height: 150px;
+  top: 50px;
+  left: 65%;
+  border: 1px solid #49b1f5;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  
+  display: none;
+  z-index: 99999999;
+}
+
+.tochange1 {
+  /* margin: auto; */
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  width:  60px;
+  height: 30px;
+  border: 2px solid #49b1f5;
+  background-color: rgb(214, 214, 214);
+}
+
+.tochange2 {
+  font-size: 20px;
+  /* margin-top: 40px; */
+  margin-left: 115px;
+  margin-top: -55px;
+  width:  60px;
+  height: 30px;
+  border: 2px solid #f54949;
+  color: red;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 未访问链接*/
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* 已访问链接 */
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* 鼠标移动到链接上 */
+a:active {
+  color: #000;
+}
+
+/* 鼠标点击时 */
